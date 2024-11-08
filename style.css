@@ -41,7 +41,8 @@ body * {
   color:var(--text-color);
 }
 #container {
-  width: 360px; /*largura*/
+  width: 100%; /*largura*/
+  max-width: 588px;
   /*border:1px solid blue;*/ /*borda para simulaçao de espaçamento*/
   margin: 56px auto 0px; /*alinhamento da caixa ao meio*/
   padding: 0 24px;
