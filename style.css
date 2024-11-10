@@ -10,7 +10,7 @@ box-sizing: border-box; /*medida pela borda*/
   --stroke-color:rgba(255,255,255,0.5);
   --surface-color:rgba(255,255,255,0.1);
   --surface-color-hover:rgba(0,0,0,0.2);
-  --highlight-color:rgba(255,255,255,0.2);
+  --highlight-color:rgba(232, 227, 227, 0.5);
   --switch-bg-url:url(.//assets/MoonStars.svg)
 
 }
@@ -18,7 +18,7 @@ box-sizing: border-box; /*medida pela borda*/
   --text-color:white;
   --bg-url:url(.//assets/modern.jpg);
   --surface-color-hover:rgba(0,0,0,0.02);
-  --highlight-color:rgba(0,0,0,0.1);
+  --highlight-color:rgba(241, 237, 237, 0.4);
   --switch-bg-url:url(.//assets/Sun.svg)
 
 
@@ -180,4 +180,28 @@ footer{
     left:0;
   }
 }
+.text {
+  font-size: 15px;
+  color: #eaedee;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  border-right: 2px solid #919292;
+  animation: blinkCursor 0.7s step-end infinite;
+}
 
+@keyframes blinkCursor {
+  from { border-color: transparent; }
+  to { border-color: #f3f5f5; }
+}
+
+.text.static {
+  border-right: none;
+  animation: none;
+}
+
+#paragraph {
+  display: none; /* Parágrafo escondido inicialmente */
+  color: #eceeee;
+  font-size: 15px;
+  margin-top: 5px;
+}
