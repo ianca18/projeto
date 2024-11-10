@@ -1,12 +1,12 @@
 
-*{ /*seletor univesao * pega todos os elementos*/
+*{ /*seletor universal * pega todos os elementos*/
 margin:0;
 padding:0;
 box-sizing: border-box; /*medida pela borda*/
 }
 :root{ /*variavel css*/
   --text-color:white;
-  --bg-url:url(.//assets/bg-mobile.jpg);
+  --bg-url:url(.//assets/red.jpeg);
   --stroke-color:rgba(255,255,255,0.5);
   --surface-color:rgba(255,255,255,0.1);
   --surface-color-hover:rgba(0,0,0,0.2);
@@ -15,10 +15,8 @@ box-sizing: border-box; /*medida pela borda*/
 
 }
 .light{
-  --text-color:black;
-  --bg-url:url(.//assets/bg-mobile-light.jpg);
-  --stroke-color:rgba(0,0,0,0.5);
-  --surface-color:rgba(0,0,0,0.05);
+  --text-color:white;
+  --bg-url:url(.//assets/modern.jpg);
   --surface-color-hover:rgba(0,0,0,0.02);
   --highlight-color:rgba(0,0,0,0.1);
   --switch-bg-url:url(.//assets/Sun.svg)
@@ -26,26 +24,17 @@ box-sizing: border-box; /*medida pela borda*/
 
 }
 body{
-  /*
-  background-image: url();
-  background-repeat: no-repeat;
-  background-position:top center;
-  background-size: cover;
-*/
-
-/*agrupa tudo dentro de um propiedade  abaixo chamado de atalho */
 background: var(--bg-url) no-repeat top center/cover;
-height: 100vh; /* vh view porte toda parte visivel do dispositivo */
+height: 100vh; 
 }
 body * {
   font-family:'inter', sans-serif;
   color:var(--text-color);
 }
 #container {
-  width: 100%; /*largura*/
+  width: 100%;
   max-width: 588px;
-  /*border:1px solid blue;*/ /*borda para simulaçao de espaçamento*/
-  margin: 56px auto 0px; /*alinhamento da caixa ao meio*/
+  margin: 56px auto 0px; 
   padding: 0 24px;
 }
 /*profile*/
@@ -58,11 +47,11 @@ body * {
 
 }
 #profile p{
-   font-weight: 500;/*peso da letra da fonte*/
-   line-height:24px; /*altura da linha*/
+   font-weight: 500;
+   line-height:24px; 
    margin-top: 8px;
 } 
-/*#switch parte do butao com a lua ligt ou back*/
+/*#switch*/
 #switch{
   position: relative;
   width: 64px;
@@ -123,7 +112,7 @@ padding:16px 24px;
 
 background: var(--surface-color);
 border: 1px solid var(--stroke-color);
-border-radius:8px; /*arredodamento da borda*/
+border-radius:8px;
 
 backdrop-filter: blur(4px);
 -webkit-backdrop-filter: blur(4px);
@@ -168,10 +157,10 @@ footer{
 /*media queries */
 @media (min-width: 700px){
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg)
+    --bg-url: url(./assets/red.jpeg)
   }
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg)
+    --bg-url: url(./assets/modern.jpg)
   }
 }
 /*ANIMACOES*/
